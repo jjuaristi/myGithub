@@ -1,0 +1,16 @@
+Reloj
+---------------
+DS3231
+MINI DS3231
+
+Codificador rotatorio
+----------------------
+ky-040
+
+Interruptor táctil piezoeléctrico o capacitivo
+-----------------------------------------------
+O utilizar un buzzer como sensor de vibración
+o un sensor de vibración SW-18020P
+
+Altavoz mini plano para alarma
+

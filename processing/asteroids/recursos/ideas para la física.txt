@@ -1,0 +1,22 @@
+Persistent variables reused every frame
+{
+  Vector2D position;
+  Vector2D velocity;
+  Vector2D acceleration;
+  float shipHeadingRadians;
+  const float shipThrust = whatever.0f;
+}
+
+Each frame, only if the player is applying thrust
+{
+  acceleration.x += shipThrust * cos(shipHeadingRadians);
+  acceleration.y += shipThrust * sin(shipHeadingRadians);
+}
+
+Each frame, regardless of whether player presses anything
+{
+  position += velocity * timestep;
+  velocity += acceleration * timestep;
+  acceleration.x = 0;
+  acceleration.y = 0;
+}
